@@ -1,0 +1,15 @@
+{
+    "datas":[
+        {
+        "id":"1",
+        "btn-name1":"TALK TO SALES",
+        "btn-name2":"GET STARTED",
+
+        "img_head":{
+            "videotitle":"Menuimage",
+            "videourl":"https://a.slack-edge.com/0cedc3b/marketing/img/homepage/true-prospects/hero-revamp/animation/hero@2x.IN.webm"
+        }
+    }
+]
+}
+

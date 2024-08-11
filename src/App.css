@@ -1,38 +1,221 @@
-.App {
+/* for buttons  */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.btn1{
+  font-weight: 700;
+  color: #4d004d!important;
+  transition:border-width 0.1s;
+}
+.btn1:hover{
+  border-width: 2px;
+  border-color: #4d004d!important;
+  color: #4d004d!important;
+  transition-timing-function: ease;
+}
+
+.btn2{
+  background-color:#4d004d;
+  font-weight: 700;
+  color: #fefefe;
+  border:1px solid rgb(70, 3, 48);
+
+}
+.btn2:hover{
+  background-color: #2c012c!important;
+  font-weight: 700;
+  color: #fefefe!important;
+}
+
+
+
+/* for navbar */
+.navbar{
+  background-color: white;
+}
+
+.offcanvas-header{
+  border-bottom: 2px solid black;
+}
+.offcanvas-body{
+  text-align: center ;
+}
+.logo{
+  width: 6.60vw;
+}
+.border1:hover{
+  border-bottom: 1px solid black;
+  padding-bottom: 0px;
+
+}
+.menu{
+  display: flexbox;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ font-family:Slack-Circular-Pro,'Helvetica Neue',Helvetica,'Segoe UI',Tahoma,Arial,sans-serif;
+}
+
+
+@media (max-width: 431px){
+  .logo{
+    width: 28vw;
+  }
+  
+  
+}
+
+.sign_in{
+  margin-top: 10px;
+}
+@media (max-width: 991px){
+.search{
+  display: none;
+}
+.navborder{
+  border: 0px;
+}
+.sign_in{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+}
+@media screen and (max-width: 769px) and (min-width: 432px) {
+  .logo{
+    width: 15vw;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 769px) {
+  .btn_first{
+    display: none;
+  }
+  
+}
+
+.fa{
+  font-size: 20px;
+  color: black!important;
+}
+
+
+/* for card_message */
+.list li{
+  list-style: none;
+}
+.list h1{
+  font-weight: bolder;
+  font-size: 3em;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-primary{
+  color: #650565!important;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px){
+  .list h1{
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+  }
+  .button{
+    margin: 0px;
+    padding: 0px;
+  }
+  .button1{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.boderr{
+  border-radius: 0% 50% 50% 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.coloured{
+  background-color: #4d004d;
+  /* border-bottom-left-radius: 50% 300px; 
+  border-bottom-right-radius: 50% 300px; 
+  width: 160%;
+  overflow: hidden; 
+  margin-bottom: -50px; 
+  position: relative; 
+  left:-30%; */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.child{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.gapline{
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+
+
+
+/* for card carusel */
+
+.card-carusel{
+  background-color: rgb(245, 234, 234);
+}
+.carousel-inner {
+  padding: 1em;
+}
+.card-slider .card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 769px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 25%;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .carousel-inner {
+    display: flex;
   }
 }
+
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide{
+    visibility: hidden;
+  }
+}
+@media (min-width: 769px) and (max-width:1400px) {
+  .card-body{
+    font-size: 0.75rem;
+  }
+}
+
